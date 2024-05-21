@@ -1,0 +1,24 @@
+{
+  "name": "focus_quadrant",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt --browser firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build --browser firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip --browser firefox",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "wxt": "^0.18.2"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5",
+    "wxt": "^0.18.2"
+  }
+}
