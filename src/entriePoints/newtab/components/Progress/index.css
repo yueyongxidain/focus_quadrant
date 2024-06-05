@@ -1,0 +1,19 @@
+.progress-card-item {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e8e8e844;
+}
+.progress-card-item-txt {
+    background-color: #fff;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border-radius: 50%;
+    color: black;
+}
+
+.display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

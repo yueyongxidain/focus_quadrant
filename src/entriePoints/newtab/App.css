@@ -1,70 +1,82 @@
 #root {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #54bc4ae0);
+    filter: drop-shadow(0 0 2em #54bc4ae0);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
 .card {
-  padding: 2em;
+    padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+    color: #888;
 }
 
+.progress-card {
+    width: 100%;
+    border-bottom: 2px solid rgb(118, 117, 117);
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+}
 
-.progress-card{
-  width: 100%;
-  border-bottom: 2px solid rgb(118, 117, 117);
-  padding: 24px;
-  display: flex;
-  justify-content: center;
+.main-card {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
-.progress-card-item{
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: conic-gradient( #76ff7f 0%, green 100%) ;
+.content-card {
+    flex: 1;
+    border-right: 2px solid rgb(118, 117, 117);
+    display: flex;
+    flex-wrap: wrap;
 }
-.main-card{
-  display: flex;
-  flex-direction: row;
-  flex: 1;
+.content-card > div {
+    width: 50%;
+    height: 50%;
 }
-.content-card{
-  flex: 1;
-  border-right: 2px solid rgb(118, 117, 117);
+.side-card {
+    width: 300px;
 }
-.side-card{
-  width: 300px;
+.important-urgent {
+    background-color: rgb(255, 122, 82);
+}
+.important-notUrgent {
+    background-color: rgb(252, 187, 46);
+}
+.notImportant-notUrgent {
+    background-color: rgb(76, 208, 139);
+}
+.notImportant-urgent {
+    background-color: rgb(125, 167, 254);
 }
